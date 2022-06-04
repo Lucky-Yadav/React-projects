@@ -8,6 +8,7 @@ root.render(
     <div className="main">
       <div className='first_div'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque obcaecati quas molestiae nemo fugiat in est reiciendis incidunt inventore minus voluptates magni dignissimos architecto cumque, porro optio sint. Tenetur!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque obcaecati quas molestiae nemo fugiat in est reiciendis incidunt inventore minus voluptates magni dignissimos architecto cumque, porro optio sint. Tenetur!</p>
+    
     </div>
     <div className='second_div'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque obcaecati quas molestiae nemo fugiat in est reiciendis incidunt inventore minus voluptates magni dignissimos architecto cumque, porro optio sint. Tenetur!</p>
     </div>
