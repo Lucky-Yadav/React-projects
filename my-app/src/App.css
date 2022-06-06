@@ -1,0 +1,18 @@
+
+.main {
+  margin: 2%;
+  display: flex;
+}
+
+
+.img img {
+  width: 20%;
+}
+.left {
+  border: 1px solid  gainsboro;
+  padding: 2%;
+  margin-right: -30%;
+}
+#2 {
+  color: red;
+}
