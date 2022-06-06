@@ -1,0 +1,21 @@
+body {
+  background: rgb(82, 80, 80);
+}
+.main {
+  margin-left: 20%;
+  padding-top: 120px;
+}
+.list {
+  text-align: left;
+  margin-left: 2%;
+}
+.dot {
+  list-style: none;
+}
+.dot::before {
+  content: "\2022"; 
+  color: rgb(244, 238, 238); 
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-right: 6px;
+}
