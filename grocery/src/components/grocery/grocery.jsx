@@ -12,7 +12,8 @@ const Todo = () => {
       id: uuidv4(),
     };
     setdata([...data, todoitem]);
-  };
+    };
+    
   console.log(data);
   return (
     <>
