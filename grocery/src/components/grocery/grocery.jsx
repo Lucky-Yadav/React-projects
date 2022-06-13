@@ -6,10 +6,12 @@ import { v4 as uuidv4 } from "uuid";
 const Todo = () => {
   const [data, setdata] = React.useState([]);
   
-  const handleadditem = (title) => {
+  const handleadditem = (title, price, category) => {
     const todoitem = {
       title: title,
       status: false,
+      price: price,
+      category: category,
       id: uuidv4(),
     };
     setdata([...data, todoitem]);
@@ -17,18 +19,18 @@ const Todo = () => {
     
   console.log(data);
 
-  const updatedata = () => {
-    const updateddata = data.map((item) => (
-      item
-    )) 
-    setdata(updateddata);
-  }
+  // const updatedata = () => {
+  //   const updateddata = data.map((item) => (
+  //     item
+  //   )) 
+  //   setdata(updateddata);
+  // }
    
   
   return (
     <>
       <Todoinput handleadditem={handleadditem} />
-      <Todolist data={data} updatedata={updatedata} />
+      {/* <Todolist data={data} updatedata={updatedata} /> */}
     </>
   );
 };
