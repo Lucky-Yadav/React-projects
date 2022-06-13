@@ -3,4 +3,6 @@ body {
 }
 .button1 {
   margin-left: 40px;
+  border-radius: 4px;
+  cursor: pointer;
 }
