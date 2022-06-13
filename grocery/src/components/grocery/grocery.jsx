@@ -16,11 +16,19 @@ const Todo = () => {
     };
     
   console.log(data);
+
+  const updatedata = () => {
+    const updateddata = data.map((item) => (
+      item
+    )) 
+    setdata(updateddata);
+  }
+   
   
   return (
     <>
       <Todoinput handleadditem={handleadditem} />
-      <Todolist data={data} />
+      <Todolist data={data} updatedata={updatedata} />
     </>
   );
 };
