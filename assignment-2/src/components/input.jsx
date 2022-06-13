@@ -10,12 +10,11 @@ const Todoinput = ({ handleadditem }) => {
     <>
       <input
         type="text"
-        placeholder="grocery item"
+        placeholder="title"
         onChange={(e) => settitle(e.target.value)}
         value={title}
       />
       <div className="form">
-        <br />
         <input
           className="gender"
           type="text"

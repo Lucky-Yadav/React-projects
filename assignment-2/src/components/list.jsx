@@ -10,14 +10,22 @@ const Todolist = ({ data, updatedata }) => {
     }
     updatedata(data);
     console.log(data);
-  }
+    }
+    
   return (
     <>
       <h2>list</h2>
       {data.map((item) => (
         <>
-          <h1 key={item.id}>
-            {item.title}
+          <div key={item.id}>
+                  title = {item.title}
+                  <br />
+                  price = {item.price}
+                  <br />
+                  category = {item.category}
+                  <br />
+                  id = {item.id}
+                  
             <button
               className="button1"
               onClick={(e) => {
@@ -27,7 +35,8 @@ const Todolist = ({ data, updatedata }) => {
             >
               delete
             </button>
-          </h1>
+            
+          </div>
         </>
       ))}
       {/* <div>{console.log(data)}</div> */}

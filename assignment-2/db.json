@@ -1,0 +1,36 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "first_name": "Berrie",
+      "last_name": "Coare",
+      "email": "bcoare0@telegraph.co.uk",
+      "isLogin": false
+    },
+    {
+      "title": "lucky",
+      "checkbox": true,
+      "id": 2
+    },
+    {
+      "title": "lucky",
+      "status": true,
+      "id": 3
+    },
+    {
+      "title": "lucky",
+      "status": true,
+      "id": 4
+    },
+    {
+      "title": "lucky",
+      "status": true,
+      "id": 5
+    },
+    {
+      "title": "lucky",
+      "status": true,
+      "id": 6
+    }
+  ]
+}

@@ -9,9 +9,6 @@ const Todo = () => {
   const handleadditem = (title, price, category) => {
     const todoitem = {
       title: title,
-      status: false,
-      price: price,
-      category: category,
       id: uuidv4(),
     };
     setdata([...data, todoitem]);
