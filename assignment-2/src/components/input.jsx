@@ -1,13 +1,15 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 
 const Todoinput = ({ handleadditem }) => {
   const [title, settitle] = React.useState("");
   //   const [gender, setgender] = React.useState("");
   const [price, setprice] = React.useState("");
   const [category, setcategory] = React.useState("");
+  const [image, setimage] = React.useState("");
 
   return (
-    <>
+    <div className="inputs">
       <input
         type="text"
         placeholder="title"
@@ -40,17 +42,23 @@ const Todoinput = ({ handleadditem }) => {
           value={category}
         />
         <br />
-        <img src="" alt="" />
+        <input
+          type="text"
+          placeholder="image url"
+          onChange={(e) => setimage(e.target.value)}
+          value={image}
+        />
       </div>
       <button
         onClick={() => {
-          handleadditem(title, price, category);
+          var id = uuidv4();
+          handleadditem(title, price, category, id, image);
           //   settitle("");
         }}
       >
         Submit
       </button>
-    </>
+    </div>
   );
 };
 export default Todoinput;

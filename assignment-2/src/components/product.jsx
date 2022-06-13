@@ -6,15 +6,17 @@ import Todolist from "./list";
 function Todo() {
   const [data, setdata] = React.useState([]);
 
-  const handleadditem = (title, price, category) => {
+  const handleadditem = (title, price, category, id, image) => {
     const todoitem = {
       title: title,
       status: false,
       price: price,
       category: category,
-      id: uuidv4(),
+        id: id,
+      image: image
     };
       setdata([...data, todoitem]);
+    //   create (title, price, category, id)
 
      
     };
@@ -28,16 +30,16 @@ function Todo() {
 
          let body = { title, price, category, id };
 
-         let resp = await fetch(`http://localhost:3000/students`, {
+         let resp = await fetch(`http://localhost:3002/students`, {
            method: "post",
            body: JSON.stringify(body),
            headers: {
              "Content-Type": "application/json",
            },
          });
-         let data = await resp.json();
+         let Data = await resp.json();
          // updatedom()
-         console.log(data);
+         console.log(Data);
        } catch (error) {
          console.log(error);
        }
@@ -47,7 +49,7 @@ function Todo() {
 
   return (
     <div className="App">
-      <h3>Sign up form</h3>
+      <h3>Product Form</h3>
       <br />
       <Todoinput handleadditem={handleadditem} />
       <Todolist data={data} updatedata={updatedata} />
