@@ -15,6 +15,7 @@ const Todo = () => {
     };
     
   console.log(data);
+  
   return (
     <>
       <Todoinput handleadditem={handleadditem} />
