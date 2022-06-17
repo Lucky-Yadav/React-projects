@@ -20,6 +20,7 @@ const Todolist = ({ data, updatedata }) => {
         <>
           <div className="data" key={item.id}>
                   title = {item.title}
+                  gender = male
                   <br />
                   price = {item.price}
                   <br />
