@@ -16,17 +16,25 @@ const NavbarWrapper = styled.div`
 
 const Navbar = () => {
     const { state, dispatch } = useContext(userContext);
-    const toggle = () => {
+    const Toggle = () => {
         if (state) {
-            // return (
-
-            // )
+            return (<>
+               <Link to="/"> Home </Link>
+                <Link to="/logout"> logout </Link>
+            </> 
+            )
+        } else {
+             return (
+               <>
+                 <Link to="#"> Home </Link>
+                 <Link to="/login"> login </Link>
+               </>
+             );
         }
     }
   return (
     <NavbarWrapper>
-      <Link to="/"> Home </Link>
-      <Link to="/Login"> login </Link>
+      <Toggle/>
     </NavbarWrapper>
   );
 };
