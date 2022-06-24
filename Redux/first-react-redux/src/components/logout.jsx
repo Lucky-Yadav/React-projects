@@ -4,7 +4,7 @@ import { userContext } from "../App";
 
 
 const logout = () => {
-    
+    const { state, dispatch } = useContext(userContext);
 }
 
 export default logout
