@@ -1,6 +1,8 @@
-import React from "react";
+
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { userContext } from "../App";
 
 const NavbarWrapper = styled.div`
   display: flex;
@@ -14,7 +16,13 @@ const NavbarWrapper = styled.div`
 
 const Navbar = () => {
     const { state, dispatch } = useContext(userContext);
-    const toggle
+    const toggle = () => {
+        if (state) {
+            // return (
+
+            // )
+        }
+    }
   return (
     <NavbarWrapper>
       <Link to="/"> Home </Link>
