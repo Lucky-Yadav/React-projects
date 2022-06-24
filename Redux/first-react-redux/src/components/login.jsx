@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { userContext } from "../App";
 
 const Login = () => {
+    const {state, dispatch} = useContext(userContext);
   const [email, setemail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const navigate = useNavigate();
@@ -18,7 +20,8 @@ const Login = () => {
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
-        if (res.token) {
+          if (res.token) {
+            dispatch({type: "USER", payload:true})
           alert("Successfully logged in");
           navigate("/");
         }

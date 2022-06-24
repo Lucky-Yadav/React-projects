@@ -13,6 +13,8 @@ const NavbarWrapper = styled.div`
 `;
 
 const Navbar = () => {
+    const { state, dispatch } = useContext(userContext);
+    const toggle
   return (
     <NavbarWrapper>
       <Link to="/"> Home </Link>
