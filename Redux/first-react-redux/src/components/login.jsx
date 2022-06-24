@@ -19,7 +19,7 @@ const Login = () => {
       .then((res) => {
         console.log(res);
         if (res.token) {
-          alert("Successfuly logged in");
+          alert("Successfully logged in");
           navigate("/");
         }
       })
