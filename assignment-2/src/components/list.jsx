@@ -19,7 +19,8 @@ const Todolist = ({ data, updatedata }) => {
       {data.map((item) => (
         <>
           <div className="data" key={item.id}>
-                  title = {item.title}
+            title = {item.title} 
+            <br />
                   gender = male
                   <br />
                   price = {item.price}
