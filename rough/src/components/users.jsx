@@ -1,10 +1,10 @@
 import React from "react";
 
-const users = () => {
+const Users = () => {
   const [users, setusers] = React.useState([]);
 
   React.useEffect(() => {
-    fetch(`https://reqres.in/api/users?page=2`)
+    fetch(`http://localhost:8080/movies`)
       .then((res) => res.json())
       .then((res) => setusers(res.data));
   }, []);
@@ -19,4 +19,4 @@ const users = () => {
   );
 };
 
-export default users;
+export default Users;
