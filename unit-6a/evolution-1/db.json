@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "lucky",
+      "age": "20",
+      "appointment_details": "I would like to meet to discuss…",
+      "time": "8",
+      "date": "18 july 2022",
+      "gender": "male"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "data": [
+    {"id":1}
+  ]
+}

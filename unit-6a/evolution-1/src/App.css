@@ -1,0 +1,53 @@
+body {
+  background: rgb(219, 214, 214);
+}
+.data {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+  display: flex;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  width: 600px;
+  justify-content: space-between;
+    background-image: linear-gradient(180deg, #bcbcc3, transparent);
+    background-image: linear-gradient(0deg, #6a6a6b, transparent );
+}
+.third {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  row-gap: 10px;
+}
+.details,.delete {
+  cursor: pointer;
+  padding: 10px;
+    background: blueviolet;
+    border: none;
+    border-radius: 5px;
+}
+.App {
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.email {
+  margin-left: 20px;
+}
+.email, .password {
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+}
+.login {
+  border: none;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+    background: rgb(136, 88, 181); 
+}
