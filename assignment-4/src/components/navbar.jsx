@@ -16,6 +16,7 @@ const Navbar = () => {
             <Link to="/"> home </Link>
             <Link to="/Login"> login </Link>
             <Link to="/bookings"> users </Link>
+            <Link to="/private"> private </Link>
         </NavbarWrapper>
     )
 }
