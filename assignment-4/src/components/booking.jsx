@@ -1,7 +1,7 @@
 import React from "react";
 
 const Users = () => {
-  const [users, setusers] = React.useState([]);
+  // const [users, setusers] = React.useState([]);
 
  
 
