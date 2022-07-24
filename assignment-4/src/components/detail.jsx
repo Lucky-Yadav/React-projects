@@ -7,7 +7,7 @@ const Detail = () => {
   console.log(value);
     return (
         <>
-        <h1>stra</h1>
+        <h1>dat</h1>
         </>
   );
 };
