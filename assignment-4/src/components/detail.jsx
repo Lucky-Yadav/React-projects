@@ -7,7 +7,7 @@ const Detail = () => {
     console.log(value)
     return (
         <>
-        <h1>data</h1>
+        <h1>done</h1>
         </>
   );
 };
