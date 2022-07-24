@@ -3,7 +3,7 @@ import React from 'react'
 import { useParams } from "react-router-dom"
 
 const Detail = () => {
-    const value = useParams()
+  const value = useParams();
   console.log(value);
     return (
         <>
