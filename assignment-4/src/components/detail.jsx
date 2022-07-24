@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom"
 
 const Detail = () => {
     const value = useParams()
-    console.log(value)
+  console.log(value);
     return (
         <>
         <h1>stra</h1>
