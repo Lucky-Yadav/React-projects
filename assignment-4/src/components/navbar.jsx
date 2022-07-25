@@ -11,6 +11,7 @@ const NavbarWrapper = styled.div`
 `;
 
 const Navbar = () => {
+    const {token, handlelogin} = useContext(second)
     return (
         <NavbarWrapper>
             <Link to="/"> home </Link>
