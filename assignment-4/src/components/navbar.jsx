@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components"
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Authcontext } from "../context/authcontext";
 
 const NavbarWrapper = styled.div`
   display: flex;
@@ -11,7 +13,7 @@ const NavbarWrapper = styled.div`
 `;
 
 const Navbar = () => {
-    const {token, handlelogin} = useContext(second)
+    const {token, handlelogin} = useContext(Authcontext)
     return (
         <NavbarWrapper>
             <Link to="/"> home </Link>
