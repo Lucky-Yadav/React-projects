@@ -9,24 +9,25 @@ const Login = () => {
         const payload = { email, password }
         console.log(payload);
         fetch(`https://reqres.in/api/login`, {
-            method: "POST",
-            body: JSON.stringify(payload),
-            headers: {
-                "Content-Type" : "application/json"
-            }
+          method: "POST",
+          body: JSON.stringify(payload),
+          headers: {
+            "Content-Type": "application/json",
+          },
         })
-        .then ((res) => res.json())
-            .then((res) => {
-                console.log(res);
-                if (res.token) {
-                  alert("Successfuly logged in")
-                  
-                navigate("/")
-                // navigate("/booking")
+          .then((res) => res.json())
+          .then((res) => {
+            console.log(res);
+            if (res.token) {
+              alert("Successfuly logged in");
+
+              navigate("/");
+              // navigate("/booking")
             }
-            }).catch((err) => {
+          })
+          .catch((err) => {
             console.log(err);
-        })
+          });
     }
     return (
       <div>
