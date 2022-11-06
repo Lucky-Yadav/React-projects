@@ -9,7 +9,6 @@ const Home = () => {
     <div>
           <h1>Appointments page</h1>
           <button className="delete" >go to Appointments page</button>
-      
     </div>
   );
 };
